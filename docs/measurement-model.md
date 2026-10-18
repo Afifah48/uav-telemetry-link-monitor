@@ -14,7 +14,9 @@ The synthetic encoder packs up to two real MAVLink 2 frames per datagram. At 100
 
 All experiments bind isolated loopback sockets on dynamically assigned ports. One finite source population is sent, then the proxy drains its scheduled queue and the receiver is allowed to finish. Every ingress datagram has a local ID and SHA-256 payload digest. Forwarded ingress records are matched by digest and occurrence to receiver records. Counts have a common population and drained window:
 
-$$\mathrm{PDR}_{UDP}=\frac{N_{\text{matched receiver datagrams}}}{N_{\text{proxy ingress datagrams}}}.$$
+$$
+\mathrm{PDR}_{UDP}=\frac{N_{\text{matched receiver datagrams}}}{N_{\text{proxy ingress datagrams}}}.
+$$
 
 The report separately records source sends, proxy ingress, forwarding, intentional drops, receiver arrivals and bytes. This exposes source→proxy loss, proxy→receiver loss and undecodable payloads instead of conflating them. The proxy forwarding ratio is forwarded/ingress; it need not equal end-delivery PDR on a loaded network. The controlled local run verifies the counts agree after intentional drops. Capture overflow and an undrained queue fail the experiment instead of silently producing a ratio.
 

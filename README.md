@@ -204,8 +204,10 @@ The offline synthetic/replay functionality is verified independently of SITL. Do
 telemetry-monitor rf --output results/rf
 ```
 
-$$L_{FS}=20\log_{10}\left(\frac{4\pi df}{c}\right),\qquad
-P_r=P_t+G_t+G_r-L_{FS}-L_{other}.$$
+$$
+L_{FS}=20\log_{10}\left(\frac{4\pi df}{c}\right),\qquad
+P_r=P_t+G_t+G_r-L_{FS}-L_{other}.
+$$
 
 Distance is in metres, frequency in hertz, power in dBm and gains/losses in dB. Raw margin is received power minus assumed sensitivity; available margin additionally subtracts a reserved fade margin. Parameters are configurable through the `LinkBudget` Python API:
 
