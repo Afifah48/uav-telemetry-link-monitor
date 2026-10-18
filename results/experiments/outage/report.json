@@ -1,0 +1,841 @@
+{
+  "schema_version": 1,
+  "source_mode": "synthetic",
+  "config": {
+    "proxy_bind": "127.0.0.1:14600",
+    "receiver_bind": "127.0.0.1:14601",
+    "loss_probability": 0,
+    "delay_ms": 0,
+    "jitter_ms": 0,
+    "reorder_probability": 0,
+    "reorder_extra_ms": 150.0,
+    "allow_reordering": false,
+    "outage_start_s": 3.0,
+    "outage_duration_s": 3.0,
+    "heartbeat_warn_s": 0.8,
+    "heartbeat_timeout_s": 1.5,
+    "inactivity_timeout_s": 2.0,
+    "sequence_reset_s": 2.0,
+    "sequence_window": 64,
+    "target_system": 1,
+    "target_component": 1,
+    "source_rate_hz": 100.0,
+    "duration_s": 10.0,
+    "seed": 48,
+    "max_pending": 10000,
+    "source_mode": "synthetic"
+  },
+  "utc_completed": "2026-10-18T17:52:13.720132+00:00",
+  "python_version": "3.13.5",
+  "observation_start_monotonic_s": 856458.3880114,
+  "drained_end_monotonic_s": 856468.5683412,
+  "source_sent_datagrams": 1150,
+  "proxy": {
+    "input": 1150,
+    "forwarded": 805,
+    "dropped": 345,
+    "reordered": 0,
+    "outage": 345,
+    "pending": 0,
+    "bind": [
+      "127.0.0.1",
+      56240
+    ],
+    "destination": [
+      "127.0.0.1",
+      56239
+    ],
+    "model": "UDP datagram degradation; no RF propagation"
+  },
+  "receiver_datagrams": 805,
+  "matched_received_datagrams": 805,
+  "matched_datagram_pdr": 0.7,
+  "proxy_forwarding_ratio": 0.7,
+  "measurement_population": "All proxy-ingress datagrams in this isolated run, matched byte-for-byte at the receiver after drain",
+  "local_same_clock_one_way_ms": {
+    "samples": 805,
+    "mean": 2.15073316661722,
+    "p50": 1.689900062046945,
+    "p95": 7.66567999962717,
+    "std": 1.755764740698452,
+    "min": 0.7932999869808555,
+    "max": 11.44069992005825
+  },
+  "proxy_residence_ms": {
+    "samples": 805,
+    "mean": 0.6474258343440406,
+    "p50": 0.5273999413475394,
+    "p95": 1.385819981805979,
+    "std": 0.548299348793292,
+    "min": 0.14450005255639553,
+    "max": 7.586200023069978
+  },
+  "delay_variation_definition": "Population standard deviation of matched local one-way delays; not arrival-interval variation",
+  "clock_note": "Source and receiver threads share this process's monotonic clock; not remote-vehicle one-way latency",
+  "recovery": {
+    "restoration_elapsed_s": 6.0,
+    "definition": "First valid selected-source HEARTBEAT arrival after scheduled link restoration",
+    "first_heartbeat_recovery_s": 0.018376599997282028,
+    "disconnection_detected": true
+  },
+  "receiver": {
+    "schema_version": 1,
+    "source_mode": "synthetic",
+    "state": "CONNECTED",
+    "observation_start_monotonic_s": 856458.3880114,
+    "elapsed_s": 10.180329800001346,
+    "snapshot_monotonic_s": 856468.5683412,
+    "target_system": 1,
+    "target_component": 1,
+    "telemetry": {
+      "latitude_deg": 25.530091,
+      "longitude_deg": 84.8499585,
+      "altitude_m_msl": 85.0,
+      "relative_altitude_m": 35.0,
+      "roll_deg": -2.4550248391359886,
+      "pitch_deg": -1.935381912647303,
+      "yaw_deg": 28.619242235614834,
+      "heading_deg": 79.92,
+      "ground_speed_m_s": 4.47213595499958,
+      "battery_voltage_v": 11.8,
+      "battery_remaining_pct": 83.0,
+      "battery_current_a": 2.5,
+      "gps_fix_type": 3,
+      "satellites": 12.0,
+      "vehicle_state": 3
+    },
+    "heartbeat_age_s": 0.37271549995057285,
+    "vehicle_timestamps": {
+      "GLOBAL_POSITION_INT": {
+        "field": "time_boot_ms",
+        "value": 9990,
+        "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+      },
+      "ATTITUDE": {
+        "field": "time_boot_ms",
+        "value": 9990,
+        "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+      },
+      "GPS_RAW_INT": {
+        "field": "time_usec",
+        "value": 9800000,
+        "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+      }
+    },
+    "freshness_s": {
+      "GLOBAL_POSITION_INT": 0.18495849997270852,
+      "ATTITUDE": 0.18495849997270852,
+      "HEARTBEAT": 0.37271549995057285,
+      "SYS_STATUS": 0.6721808000002056,
+      "GPS_RAW_INT": 0.37271549995057285,
+      "VFR_HUD": 0.2639472000300884
+    },
+    "received_datagrams": 805,
+    "received_bytes": 52537,
+    "message_counts": {
+      "GLOBAL_POSITION_INT": 700,
+      "ATTITUDE": 700,
+      "HEARTBEAT": 35,
+      "SYS_STATUS": 14,
+      "GPS_RAW_INT": 35,
+      "VFR_HUD": 70
+    },
+    "received_messages": 1554,
+    "sources": {
+      "127.0.0.1:56240/1:1": {
+        "messages": 1554,
+        "received_unique": 1554,
+        "duplicates": 0,
+        "out_of_order": 0,
+        "too_old_or_ambiguous": 0,
+        "confirmed_missing_estimate": 0,
+        "pending_gap_estimate": 0,
+        "reset_epochs": 1,
+        "missing_estimate": 0
+      }
+    },
+    "arrival_interval_mean_ms": 12.426349378146917,
+    "arrival_interval_std_ms": 106.41599178694244,
+    "reconnections": 1,
+    "invalid_telemetry_messages": 0,
+    "events": [
+      {
+        "elapsed_s": 0.004586399998515844,
+        "from": "WAITING",
+        "to": "NO_HEARTBEAT"
+      },
+      {
+        "elapsed_s": 0.011613099952228367,
+        "from": "NO_HEARTBEAT",
+        "to": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.6115787000162527,
+        "from": "CONNECTED",
+        "to": "DEGRADED"
+      },
+      {
+        "elapsed_s": 4.3295766999945045,
+        "from": "DEGRADED",
+        "to": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 6.018376599997282,
+        "from": "DISCONNECTED",
+        "to": "CONNECTED"
+      }
+    ],
+    "history": [
+      {
+        "elapsed_s": 0.004586399998515844,
+        "messages": 2,
+        "datagrams": 1,
+        "heartbeat_age_s": null,
+        "state": "NO_HEARTBEAT"
+      },
+      {
+        "elapsed_s": 0.11751330003608018,
+        "messages": 29,
+        "datagrams": 15,
+        "heartbeat_age_s": 0.10590020008385181,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.22541680000722408,
+        "messages": 54,
+        "datagrams": 28,
+        "heartbeat_age_s": 0.013822400011122227,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.3375785000389442,
+        "messages": 77,
+        "datagrams": 40,
+        "heartbeat_age_s": 0.12598410004284233,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.4462663000449538,
+        "messages": 102,
+        "datagrams": 53,
+        "heartbeat_age_s": 0.028522900072857738,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.556767400004901,
+        "messages": 126,
+        "datagrams": 65,
+        "heartbeat_age_s": 0.1390240000328049,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.6658215000061318,
+        "messages": 149,
+        "datagrams": 77,
+        "heartbeat_age_s": 0.06072700000368059,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.7741471000481397,
+        "messages": 172,
+        "datagrams": 89,
+        "heartbeat_age_s": 0.16905260004568845,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.8835727999685332,
+        "messages": 197,
+        "datagrams": 102,
+        "heartbeat_age_s": 0.0753264999948442,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 0.9921447000233456,
+        "messages": 220,
+        "datagrams": 114,
+        "heartbeat_age_s": 0.18389840004965663,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.1006781000178307,
+        "messages": 246,
+        "datagrams": 127,
+        "heartbeat_age_s": 0.09090700000524521,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.2091870999429375,
+        "messages": 269,
+        "datagrams": 139,
+        "heartbeat_age_s": 0.19941599993035197,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.3187546000117436,
+        "messages": 295,
+        "datagrams": 153,
+        "heartbeat_age_s": 0.1012051000725478,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.4271625999826938,
+        "messages": 320,
+        "datagrams": 166,
+        "heartbeat_age_s": 0.013619399978779256,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.5368902999907732,
+        "messages": 344,
+        "datagrams": 178,
+        "heartbeat_age_s": 0.12334709998685867,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.64615349995438,
+        "messages": 367,
+        "datagrams": 190,
+        "heartbeat_age_s": 0.027297799941152334,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.7556815999560058,
+        "messages": 390,
+        "datagrams": 202,
+        "heartbeat_age_s": 0.13682589994277805,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.8632775000296533,
+        "messages": 415,
+        "datagrams": 215,
+        "heartbeat_age_s": 0.05856020003557205,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 1.974972500000149,
+        "messages": 438,
+        "datagrams": 227,
+        "heartbeat_age_s": 0.17025520000606775,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.0836251999717206,
+        "messages": 464,
+        "datagrams": 240,
+        "heartbeat_age_s": 0.07680059992708266,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.1933559000026435,
+        "messages": 487,
+        "datagrams": 252,
+        "heartbeat_age_s": 0.18653129995800555,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.302568700048141,
+        "messages": 512,
+        "datagrams": 265,
+        "heartbeat_age_s": 0.09374460007529706,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.4119375000009313,
+        "messages": 535,
+        "datagrams": 277,
+        "heartbeat_age_s": 0.2031134000280872,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.523950499948114,
+        "messages": 562,
+        "datagrams": 291,
+        "heartbeat_age_s": 0.10471159999724478,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.6323080000001937,
+        "messages": 587,
+        "datagrams": 304,
+        "heartbeat_age_s": 0.027556000044569373,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.742716099950485,
+        "messages": 610,
+        "datagrams": 316,
+        "heartbeat_age_s": 0.1379640999948606,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.8500485999975353,
+        "messages": 635,
+        "datagrams": 329,
+        "heartbeat_age_s": 0.0433560999808833,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 2.9598874000366777,
+        "messages": 658,
+        "datagrams": 341,
+        "heartbeat_age_s": 0.15319490002002567,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.0842814999632537,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.2775889999466017,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.2076290999539196,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.4009365999372676,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.3308420999674127,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.5241495999507606,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.45653530000709,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.6498427999904379,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.580240400042385,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.7735479000257328,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 3.7053402999881655,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 0.8986477999715135,
+        "state": "DEGRADED"
+      },
+      {
+        "elapsed_s": 3.830068900017068,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.0233764000004157,
+        "state": "DEGRADED"
+      },
+      {
+        "elapsed_s": 3.953935800003819,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.1472432999871671,
+        "state": "DEGRADED"
+      },
+      {
+        "elapsed_s": 4.079709499957971,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.2730169999413192,
+        "state": "DEGRADED"
+      },
+      {
+        "elapsed_s": 4.204598300042562,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.3979058000259101,
+        "state": "DEGRADED"
+      },
+      {
+        "elapsed_s": 4.3295766999945045,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.5228841999778524,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 4.4539361000061035,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.6472435999894515,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 4.5776805999921635,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.7709880999755114,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 4.705840899958275,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 1.8991483999416232,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 4.831104399985634,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.0244118999689817,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 4.955659699975513,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.148967199958861,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.079603599966504,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.2729110999498516,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.2043088000500575,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.3976163000334054,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.329560099984519,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.522867599967867,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.452805500011891,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.646112999995239,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.576598000014201,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.7699054999975488,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.70139860000927,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 2.894706099992618,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.826035200036131,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 3.019342700019479,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 5.95135470002424,
+        "messages": 666,
+        "datagrams": 345,
+        "heartbeat_age_s": 3.1446622000075877,
+        "state": "DISCONNECTED"
+      },
+      {
+        "elapsed_s": 6.059876100043766,
+        "messages": 682,
+        "datagrams": 353,
+        "heartbeat_age_s": 0.04149950004648417,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.169185500009917,
+        "messages": 705,
+        "datagrams": 365,
+        "heartbeat_age_s": 0.1508089000126347,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.2793750000419095,
+        "messages": 730,
+        "datagrams": 378,
+        "heartbeat_age_s": 0.07621250010561198,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.386933299945667,
+        "messages": 753,
+        "datagrams": 390,
+        "heartbeat_age_s": 0.18377080000936985,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.496393000008538,
+        "messages": 778,
+        "datagrams": 403,
+        "heartbeat_age_s": 0.08940840000286698,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.6065687000518665,
+        "messages": 800,
+        "datagrams": 414,
+        "heartbeat_age_s": 0.1995841000461951,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.716141400043853,
+        "messages": 825,
+        "datagrams": 427,
+        "heartbeat_age_s": 0.10141170001588762,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.824804599978961,
+        "messages": 853,
+        "datagrams": 442,
+        "heartbeat_age_s": 0.013558699982240796,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 6.93506259995047,
+        "messages": 874,
+        "datagrams": 453,
+        "heartbeat_age_s": 0.12381669995374978,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.043555499985814,
+        "messages": 900,
+        "datagrams": 466,
+        "heartbeat_age_s": 0.029899499961175025,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.160631999955513,
+        "messages": 923,
+        "datagrams": 478,
+        "heartbeat_age_s": 0.1469759999308735,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.261095599969849,
+        "messages": 948,
+        "datagrams": 491,
+        "heartbeat_age_s": 0.04308510001283139,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.371945500024594,
+        "messages": 971,
+        "datagrams": 503,
+        "heartbeat_age_s": 0.15393500006757677,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.481514799990691,
+        "messages": 996,
+        "datagrams": 516,
+        "heartbeat_age_s": 0.07512629998382181,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.590490199974738,
+        "messages": 1020,
+        "datagrams": 528,
+        "heartbeat_age_s": 0.18410169996786863,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.699890500050969,
+        "messages": 1045,
+        "datagrams": 541,
+        "heartbeat_age_s": 0.09205480001401156,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.808182299952023,
+        "messages": 1068,
+        "datagrams": 553,
+        "heartbeat_age_s": 0.20034659991506487,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 7.917879799962975,
+        "messages": 1094,
+        "datagrams": 567,
+        "heartbeat_age_s": 0.10288839996792376,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.02978310000617,
+        "messages": 1120,
+        "datagrams": 580,
+        "heartbeat_age_s": 0.014715200057253242,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.14129659999162,
+        "messages": 1143,
+        "datagrams": 592,
+        "heartbeat_age_s": 0.12622870004270226,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.252706100000069,
+        "messages": 1168,
+        "datagrams": 605,
+        "heartbeat_age_s": 0.045302300015464425,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.361899300012738,
+        "messages": 1191,
+        "datagrams": 617,
+        "heartbeat_age_s": 0.1544955000281334,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.472427199943922,
+        "messages": 1216,
+        "datagrams": 630,
+        "heartbeat_age_s": 0.062321399920620024,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.582348300027661,
+        "messages": 1240,
+        "datagrams": 642,
+        "heartbeat_age_s": 0.1722425000043586,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.692082099965774,
+        "messages": 1265,
+        "datagrams": 655,
+        "heartbeat_age_s": 0.07821559999138117,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.801668499945663,
+        "messages": 1288,
+        "datagrams": 667,
+        "heartbeat_age_s": 0.18780199997127056,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 8.909705300000496,
+        "messages": 1313,
+        "datagrams": 680,
+        "heartbeat_age_s": 0.0980011000065133,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.019594199955463,
+        "messages": 1340,
+        "datagrams": 694,
+        "heartbeat_age_s": 0.013216899940744042,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.12856230000034,
+        "messages": 1363,
+        "datagrams": 706,
+        "heartbeat_age_s": 0.12218499998562038,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.23830209998414,
+        "messages": 1388,
+        "datagrams": 719,
+        "heartbeat_age_s": 0.029930999968200922,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.348685499979183,
+        "messages": 1411,
+        "datagrams": 731,
+        "heartbeat_age_s": 0.1403143999632448,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.459417899954133,
+        "messages": 1436,
+        "datagrams": 744,
+        "heartbeat_age_s": 0.04490300000179559,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.572016400052235,
+        "messages": 1460,
+        "datagrams": 756,
+        "heartbeat_age_s": 0.15750150009989738,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.681678100023419,
+        "messages": 1485,
+        "datagrams": 769,
+        "heartbeat_age_s": 0.07483870000578463,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.789332999964245,
+        "messages": 1508,
+        "datagrams": 781,
+        "heartbeat_age_s": 0.18249359994661063,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 9.899951200000942,
+        "messages": 1533,
+        "datagrams": 794,
+        "heartbeat_age_s": 0.09233689995016903,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 10.023107600049116,
+        "messages": 1554,
+        "datagrams": 805,
+        "heartbeat_age_s": 0.215493299998343,
+        "state": "CONNECTED"
+      },
+      {
+        "elapsed_s": 10.14723999996204,
+        "messages": 1554,
+        "datagrams": 805,
+        "heartbeat_age_s": 0.33962569991126657,
+        "state": "CONNECTED"
+      }
+    ],
+    "matched_datagram_pdr": 0.7,
+    "one_way_latency_ms": {
+      "samples": 805,
+      "mean": 2.15073316661722,
+      "p50": 1.689900062046945,
+      "p95": 7.66567999962717,
+      "std": 1.755764740698452,
+      "min": 0.7932999869808555,
+      "max": 11.44069992005825
+    },
+    "measurement_note": "Live arrival variation is not network delay jitter; PDR requires a drained, matched observation window.",
+    "parser_bad_data_events": 0,
+    "parser_peer_evictions": 0,
+    "local_receive_endpoint": [
+      "127.0.0.1",
+      56239
+    ],
+    "snapshot_write_errors": 0,
+    "capture_complete": true
+  },
+  "capture_complete": true
+}
