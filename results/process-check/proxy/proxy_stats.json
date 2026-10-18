@@ -1,0 +1,16 @@
+{
+  "input": 92,
+  "forwarded": 92,
+  "dropped": 0,
+  "reordered": 0,
+  "pending": 0,
+  "bind": [
+    "127.0.0.1",
+    51537
+  ],
+  "destination": [
+    "127.0.0.1",
+    51538
+  ],
+  "model": "UDP datagram degradation; no RF propagation"
+}

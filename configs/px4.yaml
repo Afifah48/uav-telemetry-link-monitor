@@ -1,0 +1,13 @@
+# Send a verified PX4 MAVLink output to this proxy's listening endpoint.
+proxy_bind: 127.0.0.1:14600
+receiver_bind: 127.0.0.1:14601
+loss_probability: 0
+delay_ms: 0
+jitter_ms: 0
+heartbeat_warn_s: 2
+heartbeat_timeout_s: 4
+inactivity_timeout_s: 5
+sequence_reset_s: 5
+target_system: 1
+target_component: 1
+source_mode: px4

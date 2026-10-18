@@ -1,0 +1,3 @@
+duration_s: 2
+proxy_bind: 127.0.0.1:51537
+receiver_bind: 127.0.0.1:51538

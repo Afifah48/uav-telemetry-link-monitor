@@ -1,0 +1,8 @@
+{
+  "sent_datagrams": 92,
+  "forwarded_datagrams": 92,
+  "received_datagrams": 92,
+  "decoded_messages": 178,
+  "parser_bad_data_events": 0,
+  "separate_processes_verified": true
+}

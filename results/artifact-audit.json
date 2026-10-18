@@ -1,0 +1,32 @@
+{
+  "nominal": {
+    "datagrams": 1150,
+    "source_frames": 2220,
+    "received_frames": 2220,
+    "artifacts_consistent": true
+  },
+  "moderate": {
+    "datagrams": 1150,
+    "source_frames": 2220,
+    "received_frames": 2103,
+    "artifacts_consistent": true
+  },
+  "severe": {
+    "datagrams": 1150,
+    "source_frames": 2220,
+    "received_frames": 1793,
+    "artifacts_consistent": true
+  },
+  "outage": {
+    "datagrams": 1150,
+    "source_frames": 2220,
+    "received_frames": 1554,
+    "artifacts_consistent": true
+  },
+  "reordering": {
+    "datagrams": 1150,
+    "source_frames": 2220,
+    "received_frames": 2220,
+    "artifacts_consistent": true
+  }
+}

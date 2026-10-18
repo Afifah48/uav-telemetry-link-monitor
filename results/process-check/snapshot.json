@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "source_mode": "synthetic",
+  "state": "CONNECTED",
+  "observation_start_monotonic_s": 856938.1278801,
+  "elapsed_s": 2.1180696999654174,
+  "snapshot_monotonic_s": 856940.2459498,
+  "target_system": 1,
+  "target_component": 1,
+  "telemetry": {
+    "latitude_deg": 25.5300157,
+    "longitude_deg": 84.8500987,
+    "altitude_m_msl": 85.0,
+    "relative_altitude_m": 35.0,
+    "roll_deg": 3.2560194792367785,
+    "pitch_deg": 1.6130946341834913,
+    "yaw_deg": 2.2631833949271365,
+    "heading_deg": 6.32,
+    "ground_speed_m_s": 4.47213595499958,
+    "battery_voltage_v": 11.8,
+    "battery_remaining_pct": 83.0,
+    "battery_current_a": 2.5,
+    "gps_fix_type": 3,
+    "satellites": 12.0,
+    "vehicle_state": 3
+  },
+  "heartbeat_age_s": 0.6675950000062585,
+  "vehicle_timestamps": {
+    "GLOBAL_POSITION_INT": {
+      "field": "time_boot_ms",
+      "value": 790,
+      "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+    },
+    "ATTITUDE": {
+      "field": "time_boot_ms",
+      "value": 790,
+      "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+    },
+    "GPS_RAW_INT": {
+      "field": "time_usec",
+      "value": 600000,
+      "basis": "Vehicle-provided clock; not assumed comparable to local monotonic time"
+    }
+  },
+  "freshness_s": {
+    "GLOBAL_POSITION_INT": 0.47471480001695454,
+    "ATTITUDE": 0.47471480001695454,
+    "HEARTBEAT": 0.6675950000062585,
+    "SYS_STATUS": 0.7781389000592753,
+    "GPS_RAW_INT": 0.6675950000062585,
+    "VFR_HUD": 0.5675669000484049
+  },
+  "received_datagrams": 92,
+  "received_bytes": 5986,
+  "message_counts": {
+    "GLOBAL_POSITION_INT": 80,
+    "ATTITUDE": 80,
+    "HEARTBEAT": 4,
+    "SYS_STATUS": 2,
+    "GPS_RAW_INT": 4,
+    "VFR_HUD": 8
+  },
+  "received_messages": 178,
+  "sources": {
+    "127.0.0.1:51537/1:1": {
+      "messages": 178,
+      "received_unique": 178,
+      "duplicates": 0,
+      "out_of_order": 0,
+      "too_old_or_ambiguous": 0,
+      "confirmed_missing_estimate": 0,
+      "pending_gap_estimate": 0,
+      "reset_epochs": 0,
+      "missing_estimate": 0
+    }
+  },
+  "arrival_interval_mean_ms": 8.837289010573711,
+  "arrival_interval_std_ms": 7.162501172870494,
+  "reconnections": 0,
+  "invalid_telemetry_messages": 0,
+  "events": [
+    {
+      "elapsed_s": 0.8391615999862552,
+      "from": "WAITING",
+      "to": "NO_HEARTBEAT"
+    },
+    {
+      "elapsed_s": 0.839619499980472,
+      "from": "NO_HEARTBEAT",
+      "to": "CONNECTED"
+    }
+  ],
+  "history": [
+    {
+      "elapsed_s": 0.023106399923563004,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.1486771999625489,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.2724842999596149,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.39782269997522235,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.5255699999397621,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.6525904999580234,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.7781503999140114,
+      "messages": 0,
+      "datagrams": 0,
+      "heartbeat_age_s": null,
+      "state": "WAITING"
+    },
+    {
+      "elapsed_s": 0.8881834999192506,
+      "messages": 14,
+      "datagrams": 7,
+      "heartbeat_age_s": 0.04856399993877858,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 0.9975375999929383,
+      "messages": 37,
+      "datagrams": 19,
+      "heartbeat_age_s": 0.1579181000124663,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.1073583000106737,
+      "messages": 62,
+      "datagrams": 32,
+      "heartbeat_age_s": 0.06231810001190752,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.2167736999690533,
+      "messages": 85,
+      "datagrams": 44,
+      "heartbeat_age_s": 0.17173349997028708,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.3248140999348834,
+      "messages": 110,
+      "datagrams": 57,
+      "heartbeat_age_s": 0.07660579995717853,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.4349784000078216,
+      "messages": 134,
+      "datagrams": 69,
+      "heartbeat_age_s": 0.18677010003011674,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.5460511000128463,
+      "messages": 159,
+      "datagrams": 82,
+      "heartbeat_age_s": 0.0955764000536874,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.6732045999960974,
+      "messages": 178,
+      "datagrams": 92,
+      "heartbeat_age_s": 0.2227299000369385,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.7997093999292701,
+      "messages": 178,
+      "datagrams": 92,
+      "heartbeat_age_s": 0.34923469997011125,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 1.9277452999958768,
+      "messages": 178,
+      "datagrams": 92,
+      "heartbeat_age_s": 0.47727060003671795,
+      "state": "CONNECTED"
+    },
+    {
+      "elapsed_s": 2.05358989990782,
+      "messages": 178,
+      "datagrams": 92,
+      "heartbeat_age_s": 0.603115199948661,
+      "state": "CONNECTED"
+    }
+  ],
+  "matched_datagram_pdr": null,
+  "one_way_latency_ms": null,
+  "measurement_note": "Live arrival variation is not network delay jitter; PDR requires a drained, matched observation window.",
+  "parser_bad_data_events": 0,
+  "parser_peer_evictions": 0,
+  "local_receive_endpoint": [
+    "127.0.0.1",
+    51538
+  ],
+  "snapshot_write_errors": 0
+}
