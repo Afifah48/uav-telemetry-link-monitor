@@ -10,8 +10,6 @@ The source encodes genuine MAVLink 2 frames with `pymavlink`, sends them over UD
 
 Built by [Afifah Khan](https://github.com/Afifah48) as an aerospace communication-engineering prototype. **Network impairment is simulated; UDP transport and MAVLink parsing are actually executed.** This is not physical RF testing or flight-control software.
 
-> The implementation is on `feature/telemetry-monitor` for pull-request review. It is not merged into the default branch without approval. PX4 SITL integration is documented but **unverified** in the development environment.
-
 ![Dashboard from an executed MAVLink capture](docs/images/dashboard-recorded.png)
 
 The screenshot comes from the completed 12-second synthetic UDP run saved in [`results/demo/`](results/demo/), with 1,310 received datagrams and 2,525 decoded messages. It explicitly labels the completed capture; its values are not a currently connected aircraft. A separate [live-reception screenshot](docs/images/dashboard-live.png) shows the dashboard while traffic was arriving. Unmeasurable live PDR/one-way latency fields stay **Unavailable**.
